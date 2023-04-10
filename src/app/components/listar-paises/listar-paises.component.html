@@ -1,0 +1,20 @@
+<h2>Paises</h2>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>Nombre</th>
+            <th>Capital</th>
+            <th>Región</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pais of listarPaises">
+                <td>{{ pais.name.common }}</td>
+                <td>{{ pais.capital }}</td>
+                <td>{{ pais.region }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+</div>
